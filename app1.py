@@ -12,7 +12,7 @@ st.image("https://media.istockphoto.com/id/1226082621/photo/insurance-concept-st
 
 # Input features
 
-age = st.slider("Age", 18, 100, 30)
+age = st.slider("Age", 18, 70, 30)
 sex = st.radio("Sex", ["Male", "Female"])
 bmi = st.slider("BMI", 10.0, 50.0, 25.0)
 children = st.number_input("Number of Children", 0, 5, 0)
@@ -42,3 +42,4 @@ if st.button("Predict Insurance Cost"):
     # Inverse transform the prediction to get original scale
     predicted_original_cost = np.expm1(prediction)
     st.success(f"The predicted insurance cost is: {predicted_original_cost[0]:.2f} Rs")
+
