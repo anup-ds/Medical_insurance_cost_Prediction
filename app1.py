@@ -42,4 +42,3 @@ if st.button("Predict Insurance Cost"):
     # Inverse transform the prediction to get original scale
     predicted_original_cost = np.expm1(prediction)
     st.success(f"The predicted insurance cost is: {predicted_original_cost[0]:.2f} Rs")
-    st.balloons()
